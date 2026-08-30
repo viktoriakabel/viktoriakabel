@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Viktoria Kabel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Viktoria Kabel</a>
+    <div class="navlinks">
+      <a href="bio.html">Bio</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="talks.html">Talks &amp; Outreach</a>
+      <a href="teaching.html">Teaching</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Research</div>
+    <h1>Research Interests</h1>
+    <p class="lede">
+      My research revolves around conceptual questions at the interface of quantum theory and gravity. Primarily, I study these topics through the lens of <i>quantum reference frames</i>,
+      which allow us to understand physics in a relational manner even in absence of classical rods and clocks. I am also curious about how to make sense of foundational notions like <i>events</i>
+      and <i>causal order</i> in absence of a fixed spacetime background, and how we partition the world into <i>subsystems</i>.</p>
+      <br>
+      <p class="lede">
+      What excites me about this research direction is not only the foundational nature of the questions but also that it requires input from many different communities: from quantum foundations 
+      and quantum information to quantum gravity and the philosophy of physics.</p>
+  </div>
+<!-- =====================================================
+     TOPIC OVERVIEW
+     ===================================================== -->
+
+    <div class="wrap">
+      <div class="cards" style="--card-bg: var(--paper-deep); --card-border: var(--apricot-soft);">
+        <button type="button" class="card" data-modal="modal-qrf">
+          <h3>Quantum Reference Frames</h3>
+          <span class="read-more">Read more →</span>
+        </button>
+        <button type="button" class="card" data-modal="modal-events">
+          <h3>Events and Causality</h3>
+          <span class="read-more">Read more →</span>
+        </button>
+        <button type="button" class="card" data-modal="modal-gravity">
+          <h3>Subsystems in Spacetime</h3>
+          <span class="read-more">Read more →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       DETAILS ON RESEARCH TOPICS
+       ===================================================== -->
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+
+  <div class="topic-modal" id="modal-qrf">
+    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    <div class="eyebrow">Research Focus</div>
+    <h3>Quantum Reference Frames</h3>
+    <p>
+      When describing a physical system, it is very common to do so with respect to a reference frame - a ruler used to determine the position of a particle, for example, or a clock, which tracks the time that elapses while it is moving.
+      Usually, reference frames are treated as purely classical objects with well-defined properties. Yet, ultimately, all material systems should be describable by quantum theory. The study of quantum reference frames (QRFs) investigates
+      what happens when we take into account the quantum properties of the reference frame itself. It aims to answer questions such as:
+    </p>
+    <ul class="dot-list">
+      <li>Which properties, previously thought to be absolute, depend on the choice of QRF?</li>
+      <li>How can we use QRFs as a tool to solve otherwise challenging problems at the interface between quantum theory and gravity?</li>
+      <li>What can QRFs tell us about the nature of spacetime in a potential future theory of quantum gravity?</li>
+    </ul>
+    <div class="entry-meta" style="margin-top: 24px;">Selected Papers</div>
+    <div class="paper-chips">
+      <a href="https://arxiv.org/abs/2607.05578" class="paper-chip" title="Reduced Quantum-Reference-Frame Channels for Open Quantum Systems">QRFs &amp; Open Systems ↗</a>
+      <a href="https://www.nature.com/articles/s42005-025-02084-3" class="paper-chip" title="Quantum coordinates, localisation of events, and the quantum hole argument">QRFs &amp; the 'Hole Argument' ↗</a>
+      <a href="https://www.nature.com/articles/s42005-023-01344-4" class="paper-chip" title="Quantum reference frames for an indefinite metric">QRFs as Tools for Prediction ↗</a>
+    </div>
+  </div>
+
+  <div class="topic-modal" id="modal-events">
+    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    <div class="eyebrow">Research Focus</div>
+    <h3>Events and Causality</h3>
+    <p>
+      Usually, the order between two events A and B is fixed: either A happens before B or B happens before A. In quantum theory, this may no longer be the case.
+      The phenomenon of <i>indefinite causal order</i> captures processes, in which the events occur in a superposition of different orders or even stranger configurations.
+      An interesting question in this area is how to embed processes with indefinite causal into spacetime.
+      This requires a careful reconsideration of what we mean by 'events' and the order between them when we no longer have fixed, classical particle trajectories or spacetime geometries.
+    </p>
+    <div class="entry-meta" style="margin-top: 24px;">Selected Papers</div>
+    <div class="paper-chips">
+      <a href="https://journals.aps.org/prl/abstract/10.1103/bnkn-4p3f" class="paper-chip" title="Indefinite Causal Order and Quantum Coordinates">Indefinite Causal Order &amp; Quantum Coordinates ↗</a>
+      <a href="https://quantum-journal.org/papers/q-2025-10-06-1875/" class="paper-chip" title="Knot invariants and indefinite causal order">Knot Invariants &amp; Indefinite Causal Order ↗</a>
+    </div>
+  </div>
+
+  <div class="topic-modal" id="modal-gravity">
+    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    <div class="eyebrow">Research Focus</div>
+    <h3>Subsystems in Spacetime</h3>
+    <p>
+      As we describe the world, we almost invariably partition it into subsystems. Often, we treat these subsystems as isolated and assume that we can neglect any interaction with the outside
+      world. Yet, there are limitations to this view. General relativity teaches us that gravity cannot be shielded.
+      This implies that all systems, except possibly the universe as a whole, are <i>gravitationally open systems</i>.
+    </p>
+    <p>  
+      Moreover, the presence of local symmetries in gauge theory and gravity warrants further caution in dealing with subsystems.
+      While gauge degrees of freedom can otherwise be regarded as redundant, they become central when considering subregions as part of a larger
+      system. In this case, so-called <i>edge modes</i> - gauge degrees of freedom at the boundary of the subregion - encode information required to couple the region to its surroundings.
+      The study of edge modes thus becomes crucial for understanding subsystems in the presence of symmetries.
+    </p>
+    <div class="entry-meta" style="margin-top: 24px;">Selected Papers</div>
+    <div class="paper-chips">
+      <a href="https://journals.aps.org/prd/abstract/10.1103/yrc1-gmql" class="paper-chip" title="Linking Edge Modes and Geometrical Clocks in Linearized Gravity">Edge Modes &amp; Geometrical Clocks ↗</a>
+      <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.106022" class="paper-chip" title="Quantum Reference Frames at the Boundary of Spacetime">Edge Modes &amp; QRFs ↗</a>
+      <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.064053" class="paper-chip" title="Metriplectic geometry for gravitational subsystems">Metriplectic Geometry for Gravitational Subsystems ↗</a>
+    </div>
+  </div>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-heading">Publications and Preprints</h2>
+    <div class="entry-list">
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">P. Luppi, <u>V. Kabel</u>, F. Giacomini, A. Smirne</div>
+          <h3>Reduced Quantum-Reference-Frame Channels for Open Quantum Systems</h3>
+          <p> Arxiv pre-print (July 2026).</p>
+        </div>
+        <a href="https://arxiv.org/abs/2607.05578" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">A.-C. de la Hamette, <u>V. Kabel</u>, Č. Brukner</div>
+          <h3>Quantum Reference Frames in Arbitrary Charge Sectors: Accessibility of Global Properties from Internal Perspectives</h3>
+          <p> Arxiv pre-print (October 2025).</p>
+        </div>
+        <a href="https://arxiv.org/abs/2510.09100" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">K. Giesel, <u>V. Kabel</u>, W. Wieland</div>
+          <h3>Linking Edge Modes and Geometrical Clocks in Linearized Gravity</h3>
+          <p> Physical Review D (September 2025).</p>
+        </div>
+        <a href="https://journals.aps.org/prd/abstract/10.1103/yrc1-gmql" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">S. Fedida, A.-C. de la Hamette, <u>V. Kabel</u>, Č. Brukner</div>
+          <h3>Knot invariants and indefinite causal order</h3>
+          <p>Quantum (October 2025).</p>
+        </div>
+        <a href="https://quantum-journal.org/papers/q-2025-10-06-1875/" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">A.-C. de la Hamette, <u>V. Kabel</u>, Č. Brukner</div>
+          <h3>What an event is not: unravelling the identity of events in quantum theory and gravity</h3>
+          <p> Arxiv pre-print (March 2024).</p>
+        </div>
+        <a href="https://arxiv.org/abs/2404.00159" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta"><u>V. Kabel</u>, A.-C. de la Hamette, L. Apadula, C. Cepollaro, H. Gomes, J. Butterfield, Č. Brukner</div>
+          <h3>Quantum coordinates, localisation of events, and the quantum hole argument</h3>
+          <p>Communications Physics (April 2025). Featured in <em>Quanta Magazine</em>: "In the Quantum World, Even Points of View Are Uncertain."</p>
+        </div>
+        <a href="https://www.nature.com/articles/s42005-025-02084-3" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">V. Kabel, Č. Brukner, W. Wieland</div>
+          <h3>Quantum Reference Frames at the Boundary of Spacetime</h3>
+          <p>Physical Review D (November 2023).</p>
+        </div>
+        <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.106022" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">A.-C. de la Hamette, <u>V. Kabel</u>, M. Christodoulou, Č. Brukner</div>
+          <h3>Indefinite Causal Order and Quantum Coordinates</h3>
+          <p>Physical Review Letters (October 2025).</p>
+        </div>
+        <a href="https://journals.aps.org/prl/abstract/10.1103/bnkn-4p3f" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta"><u>V. Kabel</u>, A.-C. de la Hamette, E. Castro-Ruiz, Č. Brukner</div>
+          <h3>Quantum conformal symmetries for spacetimes in superposition</h3>
+          <p>Quantum (December 2024).</p>
+        </div>
+        <a href="https://quantum-journal.org/papers/q-2024-12-04-1547/" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta"><u>V. Kabel</u>, W. Wieland</div>
+          <h3>Metriplectic geometry for gravitational subsystems</h3>
+          <p>Physical Review D (September 2022).</p>
+        </div>
+        <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.064053" class="entry-link">View →</a>
+      </div>
+
+      <div class="entry">
+        <div>
+          <div class="entry-meta">A.-C. de la Hamette, <u>V. Kabel</u>, E. Castro-Ruiz, Č. Brukner</div>
+          <h3>Quantum reference frames for an indefinite metric</h3>
+          <p>Communications Physics (August 2023). Featured in <em>Epsiloon Magazine</em>: "Métaphysique quantique: les premières expériences."</p>
+        </div>
+        <a href="https://www.nature.com/articles/s42005-023-01344-4" class="entry-link">View →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fnote">Text and content © Viktoria Kabel</div>
+    <div class="flinks">
+      <a href="https://arxiv.org/a/kabel_v_1.html">arXiv</a>
+      <a href="https://orcid.org/0000-0002-0776-3612">ORCID</a>
+      <span>vkabel(at)phys.ethz.ch</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================
+     TOPIC CARD MODALS — script
+     ===================================================== -->
+<script>
+  const backdrop = document.getElementById('modal-backdrop');
+
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.classList.add('is-open');
+    backdrop.classList.add('is-open');
+  }
+
+  function closeOpenModal() {
+    document.querySelectorAll('.topic-modal.is-open')
+      .forEach(m => m.classList.remove('is-open'));
+    backdrop.classList.remove('is-open');
+  }
+
+  // Wire up each topic card to open its matching modal
+  document.querySelectorAll('.cards .card').forEach(card => {
+    card.addEventListener('click', () => openModal(card.dataset.modal));
+  });
+
+  // Wire up each modal's own close (×) button
+  document.querySelectorAll('.topic-modal .modal-close').forEach(btn => {
+    btn.addEventListener('click', closeOpenModal);
+  });
+
+  // Clicking the dimmed background, or pressing Escape, also closes it
+  backdrop.addEventListener('click', closeOpenModal);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeOpenModal();
+  });
+</script>
+
+</body>
+</html>

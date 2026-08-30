@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viktoria Kabel</title>
+
+<!-- Fonts: Fraunces for headings, Inter for body text.
+     Change these two families in style.css (search "Fraunces" / "Inter")
+     if you ever want a different typeface site-wide. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- All colors, spacing and layout live in this one file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =====================================================
+     NAVIGATION — repeated identically on every page.
+     "active" class marks the current page; move it when
+     you copy this block to another file.
+     ===================================================== -->
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Viktoria Kabel</a>
+    <div class="navlinks">
+      <a href="bio.html">Bio</a>
+      <a href="research.html">Research</a>
+      <a href="talks.html">Talks &amp; Outreach</a>
+      <a href="teaching.html">Teaching</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================
+     HERO — big intro, only appears on the homepage.
+     ===================================================== -->
+<section class="hero">
+  <div class="wrap">
+
+    <!-- left column: name, tagline, buttons -->
+    <div>
+      <div class="eyebrow">Postdoctoral Researcher · ETH Zürich</div>
+
+      <!-- Optional: a short personal line goes here if/when you want
+           one — e.g.
+             <p class="hero-statement">Your line here.</p>
+           Styled quietly (see .hero-statement in style.css), sized well
+           below headline weight. Skipping it entirely, as below, works
+           fine too — the lede paragraph carries the hero on its own. -->
+
+      <p class="lede">
+        I'm a theoretical physicist working at the interface between quantum
+        theory, gravity, and the philosophy of physics.
+      </p>
+      <div class="cta-row">
+        <a href="research.html" class="btn primary">Research</a>
+        <a href="blog.html" class="btn ghost">Read the Blog →</a>
+      </div>
+    </div>
+
+    <!-- right column: square portrait with corner-bracket frame.
+         TO ADD YOUR OWN PHOTO:
+         1. Put your image file next to this html file, e.g. photo.jpg
+         2. Replace the <span class="initials">VK</span> line below with:
+            <img class="portrait-photo-img" src="photo.jpg" alt="Viktoria Kabel">
+         3. Delete the "photo placeholder" caption underneath. -->
+    <div>
+      <div class="portrait-stage">
+        <div class="portrait-photo">
+          <img class="portrait-photo-img" src="portrait_brcp.jpg" alt="Viktoria Kabel">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     RESEARCH HIGHLIGHTS — 3 cards, links point to research.html.
+     To feature different work, edit the text inside each .card,
+     or copy a .card block to add a fourth (switch grid to 4 columns
+     in style.css under "10. CARDS" if you do).
+     ===================================================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-label"><span class="dot"></span>Selected research</div>
+      <!--
+    <p class="intro-text">
+     My research revolves around foundational questions regarding symmetries, perspectives, causality and subsystems in quantum theory and general relativity.
+    </p> -->
+
+    <div class="cards">
+      <a href="https://arxiv.org/abs/2607.05578" class="card">
+        <div class="tag">Newest Pre-Print</div>
+        <h3>Quantum Reference Frames meet Open Quantum Systems</h3>
+        <p>How do open system dynamics change when we consider the evolution relative
+          to different quantum reference frames?</p>
+      </a>
+      <a href="https://www.quantamagazine.org/in-the-quantum-world-even-points-of-view-are-uncertain-20241122/" class="card">
+        <div class="tag">Featured in Quanta Magazine</div>
+        <h3>Quantum Coordinates and the Hole Argument</h3>
+        <p>On localising events in a superposition of spacetimes and the effects of quantum coordinate transformations.</p>
+      </a>
+      <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.106022" class="card">
+        <div class="tag">Physical Review D</div>
+        <h3>Quantum Reference Frames at the Boundary of Spacetime</h3>
+        <p>Investigating the link between quantum reference frames and edge modes in linearised quantum gravity.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fnote">Text and content © Viktoria Kabel</div>
+    <div class="flinks">
+      <a href="https://arxiv.org/a/kabel_v_1.html">arXiv</a>
+      <a href="https://orcid.org/0000-0002-0776-3612">ORCID</a>
+      <span>vkabel(at)phys.ethz.ch</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
