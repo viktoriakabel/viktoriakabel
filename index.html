@@ -13,6 +13,10 @@
 
 <!-- All colors, spacing and layout live in this one file -->
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 <body>
 
@@ -24,6 +28,10 @@
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">Viktoria Kabel</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </label>
     <div class="navlinks">
       <a href="bio.html">Bio</a>
       <a href="research.html">Research</a>
@@ -68,7 +76,7 @@
          2. Replace the <span class="initials">VK</span> line below with:
             <img class="portrait-photo-img" src="photo.jpg" alt="Viktoria Kabel">
          3. Delete the "photo placeholder" caption underneath. -->
-    <div>
+    <div class="hero-media">
       <div class="portrait-stage">
         <div class="portrait-photo">
           <img class="portrait-photo-img" src="portrait_brcp.jpg" alt="Viktoria Kabel">

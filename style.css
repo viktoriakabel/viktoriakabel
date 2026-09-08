@@ -194,6 +194,43 @@ nav .wrap {
   width: 100%;
 }
 
+/* mobile menu toggle — hidden checkbox + hamburger label. Toggling
+   the checkbox is what shows/hides .navlinks below 720px (see
+   RESPONSIVE section for the ~ sibling rule that does it). Hidden
+   entirely above 720px, where the full nav is always visible. */
+.nav-toggle-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+.nav-toggle-label span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+/* turn the three bars into an X once the menu is open */
+.nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav-divider {
   width: 1px;
   height: 18px;
@@ -637,13 +674,74 @@ footer .fnote {
 @media (max-width: 860px) {
   .cards { grid-template-columns: 1fr; }
   .hero .wrap { grid-template-columns: 1fr; }
-  .portrait-stage { order: -1; max-width: 220px; }
+  /* order:-1 has to go on hero-media (the actual grid item) rather than
+     .portrait-stage (its grandchild) — order only affects direct
+     children of the grid/flex container it's declared on. */
+  .hero-media { order: -1; }
+  .portrait-stage { max-width: 220px; margin: 0 auto; }
   .blog-teaser { grid-template-columns: 1fr; }
   .notion-embed { --notion-embed-h: 600px; }
 }
 
 @media (max-width: 720px) {
-  .navlinks { display: none; }
+  .nav-toggle-label { display: flex; }
+
+  /* collapsed by default; the checked checkbox (toggled by clicking
+     the hamburger label) reveals it as a full-width dropdown panel
+     anchored under the sticky nav bar */
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 32px 26px;
+    box-shadow: 0 24px 40px -28px rgba(43, 53, 66, 0.35);
+  }
+  .nav-toggle-input:checked ~ .navlinks {
+    display: flex;
+  }
+  .navlinks a {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .navlinks a::after {
+    display: none;
+  }
+  .nav-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* narrower side margins so body text gets a few more characters per
+     line instead of wrapping into a tall column of short lines */
+  .wrap { padding: 0 22px; }
+  /* keep the mobile nav dropdown's inset matching the tighter .wrap */
+  .navlinks { padding: 10px 22px 26px; }
+
+  /* the prose paragraphs (hero tagline, page-hero deks, bio/research
+     intro paragraphs) read oversized at phone widths — desktop sizing
+     is untouched above this breakpoint */
+  .lede { font-size: 15.5px; }
+  .hero .lede { font-size: 17px; }
+
+  /* shrink the homepage portrait further and scale its decorative
+     frame to match — the offset square and corner brackets are fixed
+     pixel values, so left alone they'd look oversized against a
+     smaller photo instead of like a subtle accent */
+  .portrait-stage { max-width: 170px; }
+  .portrait-stage::before { transform: translate(9px, 9px); }
+  .portrait-photo::before,
+  .portrait-photo::after {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 
@@ -737,6 +835,13 @@ footer .fnote {
 
 @media (max-width: 600px) {
   .topic-modal { padding: 36px 26px; }
+
+  /* mobile-only — desktop keeps the original 26px / 15.5px sizing.
+     Matches .entry h3 / .entry p, e.g. the Quantum Foundations
+     Seminar heading + description on teaching.html */
+  .topic-modal h3 { font-size: 18px; }
+  .topic-modal p,
+  .topic-modal .dot-list li { font-size: 14px; }
 }
 
 

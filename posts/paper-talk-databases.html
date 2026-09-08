@@ -7,12 +7,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 </head>
 <body class="compact">
 
 <nav>
   <div class="wrap">
     <a href="../index.html" class="brand">Viktoria Kabel</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </label>
     <div class="navlinks">
       <a href="../bio.html">Bio</a>
       <a href="../research.html">Research</a>
@@ -24,6 +32,19 @@
   </div>
 </nav>
 
+<!-- =====================================================
+     TEMPLATE — write the post here, then delete this comment.
+
+     Structure to keep:
+       - .page-hero block: title (h1) + optional one-line dek
+         (.lede) + date (.entry-meta)
+       - <article>: your writing, as plain <p> tags. Use
+         <h2>/<h3> for subheadings, <ul class="dot-list"><li>
+         for bullet lists (see style.css section 17), and
+         <img> for screenshots — drop image files in this same
+         posts/ folder and reference them as "your-image.png".
+       - the "Back to Blog" button at the bottom — leave as is.
+     ===================================================== -->
 <section class="page-hero">
   <div class="wrap" style="max-width: 720px;">
     <div class="eyebrow">Blog</div>
@@ -37,10 +58,12 @@
   <div class="wrap" style="max-width: 720px;">
     <article>
       <p class="lede">
-        TBA
+        Start writing here. Replace this paragraph with your introduction —
+        what the database is for and why you built it this way.
       </p>
       <p class="lede">
-        TBA
+        Add as many paragraphs, subheadings, and images as you need. Delete
+        this note and the template comment above once the post is written.
       </p>
     </article>
     <div class="cta-row" style="margin-top: 32px;">
